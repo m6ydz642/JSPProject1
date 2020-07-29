@@ -119,7 +119,7 @@ String filename = bean.getFilename();
 					<p>
 						<b>Published</b> <span class="MOD_BLOG1_Date"><%=new SimpleDateFormat("yyyy.MM.dd").format(bean.getDate())%>
 						</span> | <b>Categories</b> <span class="MOD_BLOG1_Cats"> 
-						<a href="NewsBoard.jsp?pageNum=<%=pageNum%>&newssearch=&newscategory=<%=bean.getNewscategory()%>"><%=bean.getNewscategory()%></a> </span>
+						<a href="NewsBoard.jsp?num=<%=bean.getNum()%>&newssearch=&newscategory=<%=bean.getNewscategory()%>"><%=bean.getNewscategory()%></a> </span>
 					</p>
 <!-- 							http://localhost:8080/Sample/NewsBoard.jsp?newssearch=&newscategory=%EC%82%AC%ED%9A%8C -->
 						</div>

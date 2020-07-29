@@ -46,6 +46,7 @@ int pageSize =5;
 //아래의쪽의 클릭한 페이지번호 얻기
 String pageNum = request.getParameter("pageNum");
 
+
 //아래쪽에 클릭한 페이지번호가 존재하지 않으면(현재 선택한 페이지번호가 없으면)
 //1페이지 가 화면에 보여야 하기 떄문에..
 //pageNum을 1로 저장
@@ -120,7 +121,7 @@ START MODULE AREA 2: Blog Roll 1
 						<b>Published</b> <span class="MOD_BLOG1_Date"><%=new SimpleDateFormat("yyyy.MM.dd").format(newsbean.getDate())%>
 						</span> | <b>Categories</b> <span class="MOD_BLOG1_Cats"> 
 						
-<a href="NewsBoard.jsp?pageNum=<%=pageNum%>&newssearch=&newscategory=<%=newsbean.getNewscategory()%>"><%=newsbean.getNewscategory()%></a></span>
+<a href="NewsBoard.jsp?num=<%=newsbean.getNum()%>&newssearch=&newscategory=<%=newsbean.getNewscategory()%>"><%=newsbean.getNewscategory()%></a></span>
 						
 					</p>
 				</div>
