@@ -1,6 +1,8 @@
 use Sample;
 
 grant all privileges on Sample.* to jspid@'localhost' identified by 'jsppass';
+/* 원래 올리면 안되는데 걍 올림 */
+
 /*관리자로 부터 Sample databases 권한 받기*/
  use Sample;
 
